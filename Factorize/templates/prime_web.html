@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 class="head">Prime Factors</h1>
+<h4>enter a number you want to factorize</h4>
+<form action="{{ url_for('prime_web') }}" method="POST">
+    <input type="text" name="number" placeholder="Enter a Valid Number">
+    <button>Submit</button>
+</form>
+
+{% if factor %}
+<p>factors of {{number}} are {{factor}}</p>
+{% endif %}
+{% endblock %}

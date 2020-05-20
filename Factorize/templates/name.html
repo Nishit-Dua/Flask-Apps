@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<header>Test Site</header>
+<div>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non in, asperiores omnis
+        nisi sequi tempora minima sit a quo delectus dolor doloremque ducimus, molestiae laudantium? Possimus eligendi
+        nisi corporis!</p>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugiat aliquid est blanditiis
+        aspernatur exercitationem dicta harum excepturi soluta, labore placeat delectus, autem reprehenderit. Vel
+        officiis doloribus ullam voluptas impedit!</p>
+</div>
+<form action="{{ url_for('hello_name') }}" method="POST">
+    <input type="text" name="name" placeholder="Enter Name">
+    <button>Submit</button>
+</form>
+
+{% endblock body %}
